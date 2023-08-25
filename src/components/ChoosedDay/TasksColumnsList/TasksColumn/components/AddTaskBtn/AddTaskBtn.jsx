@@ -20,7 +20,8 @@ export const AddTaskBtn = ({ category }) => {
   const date = useSelector(selectDate);
 
   const currentDate = new Date();
-  currentDate.setHours(0, 0, 0, 0); // Встановлюємо час на початок дня
+  // Встановлюємо час на початок дня
+  currentDate.setHours(0, 0, 0, 0);
   const isButtonActive = new Date(date) >= currentDate;
 
   return (
